@@ -36,6 +36,12 @@
     color: #000;
     display: flex;
     justify-content: center;
-    padding: 0 1rem;
-    border-radius: 1rem;
+    padding: 0.25rem 2rem;
+    border-radius: 2rem;
+}
+
+.imgMenuBtn {
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 2rem;
 }
