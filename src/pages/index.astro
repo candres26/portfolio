@@ -3,9 +3,20 @@ import Layout from '../layouts/Layout.astro';
 import Badge from '../components/Badge.astro';
 ---
 
-<Layout>
+<Layout title="Mi Portfolio Andres Reyes Enjoy!!">
     <main>
-        <h1>Hola, soy Andres <Badge>Disponible para trabajar</Badge></h1>
-        <h2>Desarrollador de Software, soy de Colombia.</h2>
+        <section class="w-full lg:w-[740px] mx-auto py-44">
+            <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+                Hola, soy Andres 
+                    <a class="flex items-center"
+                        href="https://www.linkedin.com/in/carlosandresreyesandrade" 
+                        target="_blank" 
+                        rel="noopener"
+                    >
+                        <Badge>Disponible para trabajar</Badge>
+                    </a>
+            </h1>
+            <h2 class="text-xl opacity-70">Desarrollador de Software, soy de Colombia.</h2>
+        </section>
     </main>
 </Layout>
