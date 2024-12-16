@@ -1,19 +1,27 @@
 ---
 import imgProfile from '../assets/profile3.png';
+import { Image } from 'astro:assets';
+
 ---
 
 <header class="flex justify-between items-center py-5 w-[1120px] mx-auto">
-    <img 
+    <Image 
+        src={imgProfile} 
+        alt="andres reyes" 
+        class="rounded-full w-14 h-14" 
+        loading="lazy"
+    />
+    <!-- <img 
         class="rounded-full w-14 h-14"
         src={imgProfile.src}
-        alt="midudev photo"
-    />
+        alt="andres reyes"
+    /> -->
 
     <nav class="flex flex-row gap-x-10 opacity-80">
         <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/projects">Projects</a>
-        <a href="/contact">Contact</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Experiencia</a>
+        <a href="#">Contactame</a>
     </nav>
 
 </header>
