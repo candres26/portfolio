@@ -1,0 +1,37 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+    {
+        date: 'Actualmente ...',
+        title: 'Ingeniero de Software - Optica Fenix',
+        description: 'Implementación de un E-commerce para la venta de gafas en Prestashop usando una instancia EC2 de AWS, se creó un chatbot para asignación de citas usando NodeJS con conexión a la API de Whatsapp.',
+        link: 'https://www.emanueleyewear.co',
+        // icon: CalendarIcon
+    },
+    {
+        date: 'Actualmente ...',
+        title: 'Desarrollador de Software Freelance',
+        description: 'Desarrollo aplicaciones web enfocadas en solucionar las necesidades de los clientes, desde el diseño de interfaces hasta la implementación de código, usando tecnologías como React, Next.js, Tailwind CSS, TypeScript, Node.js, Express.js, PostgreSQL, AWS y más.',
+        link: '#',
+        // icon: CalendarIcon
+    },
+    {
+        date: 'Febrero 2023',
+        title: 'Desarrollador de Software Freelance - Innovahub',
+        description: 'Responsable del desarrollo de el backend de la aplicación web para la recepción de propuestas ciudadanas para el Gobierno de Honduras. Usando HTML, CSS, Javascript, Python, Flask, MySQL, Redis.',
+        link: 'https://redpublica.hn',
+        // icon: CalendarIcon
+    },
+];
+---
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">
+    {
+        EXPERIENCE.map((experience) => (
+            <li class="mb-10 ms-4">
+                <ExperienceItem {...experience} />
+            </li>
+        ))
+    }
+</ol>
+

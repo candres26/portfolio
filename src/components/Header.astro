@@ -4,7 +4,7 @@ import { Image } from 'astro:assets';
 
 ---
 
-<header class="flex justify-between items-center py-5 w-[1120px] mx-auto">
+<header class="flex justify-between items-center py-5 w-full xl:w-[1120px] mx-auto">
     <Image 
         src={imgProfile} 
         alt="andres reyes" 
@@ -18,10 +18,11 @@ import { Image } from 'astro:assets';
     /> -->
 
     <nav class="flex flex-row gap-x-10 opacity-80">
-        <a href="/">Home</a>
-        <a href="#">Acerca de</a>
-        <a href="#">Experiencia</a>
-        <a href="#">Contactame</a>
+        <a href="#top">Inicio</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#acerca-de-mi">Acerca de mi</a>
+        <a href="#contacto">Contáctame</a>
     </nav>
 
 </header>
